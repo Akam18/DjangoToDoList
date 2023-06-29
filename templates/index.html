@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    
+    {% for task in all_data %}
+        <div> 
+                <h2>{{ task.title }}</h2>
+                <h2>{{ task.description }}</h2>
+                <h2>{{ task.completed }}</h2>
+            </a>
+            <hr>
+        </div>
+    {% endfor %}
+
+<form class="container" method="post" enctype="">
+  {% csrf_token %}
+  {{ form.title }}
+  {{ form.description }}  
+  {{ form.completed }}
+  <button class="btn" type="submit">Get</button>
+</form>    
+
+
+</body>
+</html>
