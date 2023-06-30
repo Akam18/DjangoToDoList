@@ -16,7 +16,7 @@ class TaskForm(ModelForm):
                 }),
 
             'completed': CheckboxInput(attrs={
-                "class": "form-check-input"
+                "class": "form-check-input "
                   })   
         }
 

@@ -19,7 +19,7 @@ def add_index(request):
     else:
         form = TaskForm()
 
-    return render(request, 'index.html',form=form)            
+    return render(request, 'index.html',{'form': form})            
 
 
 

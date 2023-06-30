@@ -10,6 +10,8 @@
     {% for task in all_data %}
         <div> 
                 <h2>{{ task.title }}</h2>
+
+                
                 <h2>{{ task.description }}</h2>
                 <h2>{{ task.completed }}</h2>
             </a>
@@ -17,7 +19,7 @@
         </div>
     {% endfor %}
 
-<form class="container" method="post" enctype="">
+<form class="container" method="POST" enctype="">
   {% csrf_token %}
   {{ form.title }}
   {{ form.description }}  
